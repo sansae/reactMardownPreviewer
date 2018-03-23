@@ -6,16 +6,12 @@ import Preview from './components/preview';
 class App extends Component {
 
   render () {
-    // const divStyle = {
-    //   border: '5px solid red'
-    // };
-
     return (
-      <div id="markdown">
-        <div id="markdown">
+      <div>
+        <div class="components">
           <Markdown />
         </div>
-        <div id="markdown">
+        <div class="components">
           <Preview />
         </div>
       </div>

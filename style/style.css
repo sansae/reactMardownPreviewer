@@ -1,5 +1,5 @@
-#markdown {
-  background: red;
+.components {
   color: red;
   border: 1px solid red;
+  display: inline-block;
 }
