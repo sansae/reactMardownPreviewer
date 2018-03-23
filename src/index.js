@@ -7,19 +7,23 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { markdown: 'testing markdown state' };
+    this.state = { markdown: '' };
+    this.handleChange = this.handleChange.bind(this);
   }
 
-
+  handleChange(event) {
+    this.setState({ markdown: event.target.value });
+    console.log(this.state.markdown);
+  }
 
   render () {
     return (
       <div>
         <div id="markdown">
-          <Markdown markdown={this.state.markdown} />
+          <Markdown value={this.state.markdown} onChange={this.handleChange}/>
         </div>
         <div id="preview">
-          <Preview />
+          <Preview preview={this.state.markdown}/>
         </div>
       </div>
     );
