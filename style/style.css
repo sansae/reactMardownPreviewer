@@ -1,5 +1,8 @@
-.components {
-  color: red;
-  border: 1px solid red;
+#markdown, #preview {
+  border: 1px solid black;
   display: inline-block;
+}
+
+#preview {
+  vertical-align: top;
 }

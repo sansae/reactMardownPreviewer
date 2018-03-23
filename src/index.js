@@ -4,14 +4,21 @@ import Markdown from './components/markdown';
 import Preview from './components/preview';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { markdown: 'testing markdown state' };
+  }
+
+
 
   render () {
     return (
       <div>
-        <div class="components">
-          <Markdown />
+        <div id="markdown">
+          <Markdown markdown={this.state.markdown} />
         </div>
-        <div class="components">
+        <div id="preview">
           <Preview />
         </div>
       </div>

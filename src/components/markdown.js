@@ -1,11 +1,17 @@
 import React from 'react';
 
 class Markdown extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render () {
+    var markdown = this.props.markdown;
+
     return (
       <div>
         <div>
-          <textarea rows='20' cols='50'>I am Markdown</textarea>
+          <textarea rows='20' cols='50'>{markdown}</textarea>
         </div>
       </div>
     )
