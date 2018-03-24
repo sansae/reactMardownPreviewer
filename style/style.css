@@ -5,4 +5,5 @@
 
 #preview {
   vertical-align: top;
+  white-space: pre-line;
 }
