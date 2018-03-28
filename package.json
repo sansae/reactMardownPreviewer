@@ -17,7 +17,8 @@
     "babel-preset-react": "^6.24.1",
     "marked": "^0.3.18",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-markdown": "^3.3.0"
   },
   "devDependencies": {
     "webpack": "^3.10.0",
