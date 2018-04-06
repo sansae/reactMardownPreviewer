@@ -11,7 +11,6 @@ class Markdown extends React.Component {
     return (
       <div>
         <div>
-          <h1>Markdown</h1>
           <textarea rows='20' cols='40' onChange={this.props.onChange}>
           </textarea>
         </div>

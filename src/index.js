@@ -21,6 +21,11 @@ class App extends Component {
 
     return (
       <div>
+        <h1 id="title">Markdown Previewer</h1>
+        <div>
+          <p>- This is a GitHub Flavored Markdown app written in ReactJS.</p>
+          <p>- Enter markdown in the textarea below and see it live</p>
+        </div>
         <div id="markdown">
           <Markdown value={this.state.markdown} onChange={this.handleChange}/>
         </div>

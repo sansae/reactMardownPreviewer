@@ -10,7 +10,6 @@ class Preview extends React.Component {
 
     return (
       <div>
-        <h1>Markdown Preview</h1>
         <div>{preview}</div>
       </div>
     )
