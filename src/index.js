@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import Markdown from './components/markdown';
 import Preview from './components/preview';
+import ReactMarkdown from 'react-markdown';
 
 class App extends Component {
   constructor(props) {
@@ -13,17 +14,18 @@ class App extends Component {
 
   handleChange(event) {
     this.setState({ markdown: event.target.value });
-    console.log(this.state.markdown);
   }
 
   render () {
+    var markdown = this.state.markdown;
+
     return (
       <div>
         <div id="markdown">
           <Markdown value={this.state.markdown} onChange={this.handleChange}/>
         </div>
         <div id="preview">
-          <Preview preview={this.state.markdown}/>
+          <Preview preview={<ReactMarkdown source={markdown} />} />
         </div>
       </div>
     );
